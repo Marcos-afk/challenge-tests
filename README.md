@@ -44,7 +44,7 @@ yarn dev(iniciar o servidor)
 
 Users
 
-- [o] Should be able to create a new user
+- [x] Should be able to create a new user
 - [o] Should be not able to create a new user, email already exists
 - [o] should be able to create a new session
 - [o] Should be not able to create a new session, invalid email
