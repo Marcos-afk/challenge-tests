@@ -49,8 +49,8 @@ Users
 - [o] should be able to create a new session
 - [o] Should be not able to create a new session, invalid email
 - [o] Should be not able to create a new session, invalid password
-- [o] Should be able to return a user
-- [o] Should be not able to return a user, user not found
+- [x] Should be able to return a user
+- [x] Should be not able to return a user, user not found
 
 Statements
 
