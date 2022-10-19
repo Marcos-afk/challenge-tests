@@ -46,9 +46,9 @@ Users
 
 - [x] Should be able to create a new user
 - [x] Should be not able to create a new user, email already exists
-- [o] should be able to create a new session
-- [o] Should be not able to create a new session, invalid email
-- [o] Should be not able to create a new session, invalid password
+- [x] should be able to create a new session
+- [x] Should be not able to create a new session, invalid email
+- [x] Should be not able to create a new session, invalid password
 - [x] Should be able to return a user
 - [x] Should be not able to return a user, user not found
 
