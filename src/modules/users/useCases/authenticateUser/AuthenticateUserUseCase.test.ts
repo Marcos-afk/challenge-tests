@@ -8,7 +8,7 @@ let authenticateUserUseCase: AuthenticateUserUseCase;
 let createUserUseCase: CreateUserUseCase;
 let usersRepositoryInMemory: InMemoryUsersRepository;
 
-describe("Show user profile", () => {
+describe("Authenticate user", () => {
   beforeEach(() => {
     usersRepositoryInMemory = new InMemoryUsersRepository();
     createUserUseCase = new CreateUserUseCase(usersRepositoryInMemory);
