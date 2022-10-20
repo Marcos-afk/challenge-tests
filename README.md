@@ -30,10 +30,6 @@ Desafio 04 do conteúdo estudado nas aulas do Chapter IV da trilha de NodeJS do 
 
 yarn install
 
-// Se você não possui um container do Docker rodando o Postgres, é possível criá-lo com seguinte comando:
-
-docker run --name ignite-challenge-database -e POSTGRES_DB=queries_challenge -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
-
 // Concluindo a instalação rode
 
 yarn test(rodar testes)
