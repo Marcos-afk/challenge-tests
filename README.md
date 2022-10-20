@@ -36,7 +36,7 @@ yarn install
 // Concluindo a instalação rode
 
 yarn test(rodar testes)
-yarn dev(iniciar o servidor)
+docker-compose up(iniciar a aplicação)
 ```
 
 ### :heavy_check_mark: Testes da aplicação
