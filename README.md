@@ -58,7 +58,7 @@ Statements
 - [x] Should be not able to create a new statement, user not found
 - [x] Should be not able to create a new statement, Insufficient funds
 - [x] Should be able to return a balance to a user
-- [o] Should be not able to return a balance to a user, user not found
-- [o] Should be able to return a statement operation
-- [o] Should be not able to return a statement operation, user not found
-- [o] Should be not able to return a statement operation, statement operation not found
+- [x] Should be not able to return a balance to a user, user not found
+- [x] Should be able to return a statement operation
+- [x] Should be not able to return a statement operation, user not found
+- [x] Should be not able to return a statement operation, statement operation not found
