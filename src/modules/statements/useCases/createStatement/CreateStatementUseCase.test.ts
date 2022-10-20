@@ -58,7 +58,7 @@ describe("Create statement", () => {
     ).rejects.toBeInstanceOf(CreateStatementError.UserNotFound);
   });
 
-  it("Should be able to create a new statement", async () => {
+  it("Should be not able to create a new statement, Insufficient funds", async () => {
     const user: ICreateUserDTO = {
       name: "user test",
       email: "user@email.test",
