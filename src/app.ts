@@ -1,12 +1,13 @@
 import "reflect-metadata";
 import "express-async-errors";
 import express, { NextFunction, Request, Response } from "express";
-import cors from "cors";
 import "./shared/container";
+import cors from "cors";
+import { config } from "dotenv";
 import { router } from "./routes";
 import { AppError } from "./shared/errors/AppError";
 import { InitializeConnection } from "./database";
-import { config } from "dotenv";
+
 config();
 
 const app = express();
@@ -15,6 +16,7 @@ InitializeConnection();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 app.use("/api/v1", router);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
