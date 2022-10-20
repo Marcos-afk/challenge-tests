@@ -6,8 +6,11 @@ Desafio 04 do conteúdo estudado nas aulas do Chapter IV da trilha de NodeJS do 
 
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [cors](https://www.npmjs.com/package/cors)
+- [cross-env](https://www.npmjs.com/package/cross-env)
 - [docker](https://docs.docker.com/)
 - [dotenv](https://www.npmjs.com/package/dotenv)
+- [docker](https://docs.docker.com/)
+- [docker-compose](https://docs.docker.com/compose/)
 - [express](https://www.npmjs.com/package/express)
 - [express-async-errors](https://www.npmjs.com/package/express-async-errors)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)

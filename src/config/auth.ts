@@ -1,6 +1,6 @@
 export default {
   jwt: {
-    secret: process.env.JWT_SECRET as string,
-    expiresIn: '1d'
-  }
-}
+    secret: process.env.JWT_KEY as string,
+    expiresIn: process.env.JWT_EXPIRES_IN,
+  },
+};
