@@ -1,4 +1,4 @@
-# Database queries challenge
+# Tests challenge
 
 Desafio 04 do conteúdo estudado nas aulas do Chapter IV da trilha de NodeJS do Bootcamp Ignite da Rocketseat
 
