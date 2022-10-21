@@ -45,7 +45,7 @@ describe("Create statement controller", () => {
       });
 
     const responseWithdraw = await request(app)
-      .post("/api/v1/statements/deposit")
+      .post("/api/v1/statements/withdraw")
       .send({
         amount: 100,
         description: "contas",
