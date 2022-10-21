@@ -60,6 +60,6 @@ describe("Get balance controller", () => {
         Authorization: `Bearer ${token}`,
       });
 
-    console.log(response);
+    expect(response.status).toBe(200);
   });
 });
