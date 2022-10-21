@@ -21,11 +21,11 @@ describe("Create user controller", () => {
       password: "12345678",
     };
 
-    const response = await request(app)
-      .post("/api/v1/users")
-      .send({
-        ...user,
-      });
+    const response = await request(app).post("/api/v1/users").send({
+      name: user.name,
+      email: user.email,
+      password: user.password,
+    });
 
     expect(response.status).toBe(201);
   });

@@ -21,11 +21,11 @@ describe("Show user controller", () => {
       password: "12345678",
     };
 
-    await request(app)
-      .post("/api/v1/users")
-      .send({
-        ...user,
-      });
+    await request(app).post("/api/v1/users").send({
+      name: user.name,
+      email: user.email,
+      password: user.password,
+    });
 
     const responseToken = await request(app).post("/api/v1/sessions").send({
       email: user.email,
