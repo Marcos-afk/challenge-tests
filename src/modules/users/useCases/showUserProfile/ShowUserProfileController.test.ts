@@ -3,7 +3,7 @@ import request from "supertest";
 import { app } from "../../../../app";
 import { ICreateUserDTO } from "../createUser/ICreateUserDTO";
 
-describe("Create user controller", () => {
+describe("Show user controller", () => {
   beforeAll(async () => {
     await InitializeConnection();
     await AppSource.runMigrations();
