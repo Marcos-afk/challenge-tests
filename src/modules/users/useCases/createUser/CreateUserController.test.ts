@@ -17,7 +17,7 @@ describe("Create user controller", () => {
   it("Should be able to create a new user", async () => {
     const user: ICreateUserDTO = {
       name: "user test",
-      email: "user@email.test",
+      email: "test@email.test",
       password: "12345678",
     };
 

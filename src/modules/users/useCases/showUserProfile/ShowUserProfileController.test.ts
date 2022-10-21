@@ -17,7 +17,7 @@ describe("Show user controller", () => {
   it("Should be able to return a user", async () => {
     const user: ICreateUserDTO = {
       name: "user test",
-      email: "user@email.test",
+      email: "test@email.test",
       password: "12345678",
     };
 
@@ -27,11 +27,10 @@ describe("Show user controller", () => {
         ...user,
       });
 
-    const responseToken = await request(app)
-      .post("/api/v1/sessions")
-      .send({
-        ...user,
-      });
+    const responseToken = await request(app).post("/api/v1/sessions").send({
+      email: user.email,
+      password: user.password,
+    });
 
     const { token } = responseToken.body;
 

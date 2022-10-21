@@ -20,6 +20,6 @@ export const InitializeConnection = () => {
   const host =
     process.env.NODE_ENV === "test" ? "localhost" : process.env.POSTGRES_HOST;
   const database =
-    process.env.NODE_ENV === "test" ? "fin_api_test" : process.env.POSTGRES_DB;
+    process.env.NODE_ENV === "test" ? "fin_api" : process.env.POSTGRES_DB;
   return AppSource.setOptions({ host, database }).initialize();
 };
