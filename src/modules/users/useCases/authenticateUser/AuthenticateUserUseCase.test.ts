@@ -24,7 +24,7 @@ describe("Authenticate user", () => {
       password: "12345678",
     };
 
-    const userCreated = await createUserUseCase.execute({ ...user });
+    await createUserUseCase.execute({ ...user });
 
     const session = await authenticateUserUseCase.execute({
       ...user,
@@ -54,7 +54,7 @@ describe("Authenticate user", () => {
       password: "12345678",
     };
 
-    const userCreated = await createUserUseCase.execute({ ...user });
+    await createUserUseCase.execute({ ...user });
 
     expect(
       authenticateUserUseCase.execute({

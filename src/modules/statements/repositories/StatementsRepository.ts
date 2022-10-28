@@ -16,12 +16,14 @@ export class StatementsRepository implements IStatementsRepository {
 
   async create({
     user_id,
+    sender_id,
     amount,
     description,
     type,
   }: ICreateStatementDTO): Promise<Statement> {
     const statement = this.repository.create({
       user_id,
+      sender_id,
       amount,
       description,
       type,
@@ -48,8 +50,8 @@ export class StatementsRepository implements IStatementsRepository {
     });
 
     const balance = statement.reduce((acc, operation) => {
-      if (operation.type === "deposit") {
-        return acc + operation.amount;
+      if (operation.type === "deposit" || operation.type === "transfer") {
+        return acc + parseFloat(String(operation.amount));
       } else {
         return acc - operation.amount;
       }

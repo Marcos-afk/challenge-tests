@@ -13,12 +13,16 @@ import { User } from "../../users/entities/User";
 export enum OperationType {
   DEPOSIT = "deposit",
   WITHDRAW = "withdraw",
+  TRANSFER = "transfer",
 }
 
 @Entity("statements")
 export class Statement {
   @PrimaryGeneratedColumn("uuid")
   id?: string;
+
+  @Column("uuid")
+  sender_id: string;
 
   @Column("uuid")
   user_id: string;
@@ -34,7 +38,7 @@ export class Statement {
   amount: number;
 
   @Column({ type: "enum", enum: OperationType })
-  type: OperationType;
+  type: string;
 
   @CreateDateColumn()
   created_at: Date;
